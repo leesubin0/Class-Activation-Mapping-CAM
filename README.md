@@ -1073,12 +1073,11 @@ Test Accuracy : 84.98%
 
 모델이 특정 클래스라고 예측한 이미지 중
 실제로 해당 클래스인 이미지의 비율임.
-
-$$
+>$$
 \text{Precision}
 =
 \frac{TP}{TP+FP}
-$$
+>$$
 
 예를 들어 모델이 `cat`이라고 예측한 이미지 중
 실제로 고양이인 이미지가 얼마나 되는지를 의미함.
@@ -1089,12 +1088,11 @@ $$
 
 실제 특정 클래스 이미지 중
 모델이 해당 클래스로 올바르게 예측한 비율임.
-
-$$
+>$$
 \text{Recall}
 =
 \frac{TP}{TP+FN}
-$$
+>$$
 
 예를 들어 실제 고양이 이미지 전체 중
 모델이 `cat`이라고 찾아낸 이미지의 비율을 의미함.
@@ -1104,15 +1102,14 @@ $$
 #### iii) F1-score
 
 Precision과 Recall의 조화평균임.
-
-$$
+>$$
 F1
 =
 2
 \times
 \frac{\text{Precision}\times\text{Recall}}
 {\text{Precision}+\text{Recall}}
-$$
+>$$
 
 Precision과 Recall 중 어느 한쪽만 높아도 좋은 점수를 얻는 것을 방지하며,
 두 지표의 균형을 평가할 수 있음.
@@ -1651,29 +1648,29 @@ horse → cat
 
 > ![](https://velog.velcdn.com/images/keepbini366/post/c427de7a-25ef-4a8e-b9dd-2fe53232672b/image.png)
 >```text
-True : dog
-Pred : deer
+>True : dog
+>Pred : deer
 >
-P(deer) : 95.73%
-P(dog)  : 4.10%
+>P(deer) : 95.73%
+>P(dog)  : 4.10%
 >```
 
 > ![](https://velog.velcdn.com/images/keepbini366/post/a5feba66-1452-40ed-9d6a-da274df8c621/image.png)
 >```text
-True : horse
-Pred : cat
+>True : horse
+>Pred : cat
 >
-P(cat)   : 92.78%
-P(horse) : 0.97%
+>P(cat)   : 92.78%
+>P(horse) : 0.97%
 >```
 
 > ![](https://velog.velcdn.com/images/keepbini366/post/997fa1bc-94e8-4ff6-9674-007b7e65cbd3/image.png)
 >```text
-True : frog
-Pred : bird
+>True : frog
+>Pred : bird
 >
-P(bird) : 93.02%
-P(frog) : 6.84%
+>P(bird) : 93.02%
+>P(frog) : 6.84%
 >```
 
 이러한 사례는 모델이 단순히 두 클래스 사이에서 고민한 것도 아니고,
